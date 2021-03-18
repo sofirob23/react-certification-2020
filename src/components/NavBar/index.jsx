@@ -36,17 +36,22 @@ const NavBar = () => {
             <SearchIconStyled>
               <SearchIcon />
             </SearchIconStyled>
-            <InputStyled placeholder="Search" />
+            <InputStyled className="search-bar" placeholder="Search" />
           </SearchBar>
 
           <ProfileCollapse>
             <AccountCircle fontSize="large" />
           </ProfileCollapse>
-          <FullDisplay>
-            <FormGroup>
+          <FullDisplay className="FullDisplay">
+            <FormGroup className="ToggleGroup">
               <FormControlLabel
                 control={
-                  <Switch checked={darkMode} onChange={handleChange} color="default" />
+                  <Switch
+                    id="ToggleSwitch"
+                    checked={darkMode}
+                    onChange={handleChange}
+                    color="default"
+                  />
                 }
                 label="Dark Mode"
               />

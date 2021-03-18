@@ -13,5 +13,8 @@
     "array-callback-return": "off",
     "consistent-return": "off",
     "no-console": "off"
+  },
+  "settings": {
+    "import/core-modules": ["enzyme", "enzyme-adapter-react-16"]
   }
 }

@@ -6,6 +6,7 @@ import VideoCard from '../../components/VideoCard';
 import logo from '../../utils/assets/logo.gif';
 import smallLogo from '../../utils/assets/small-logo.gif';
 import videos from '../../utils/youtube-videos-mock.json';
+import filterVideos from '../../utils/filterVideos';
 
 const HomePage = () => {
   return (
@@ -13,15 +14,13 @@ const HomePage = () => {
       <Logo src={logo} alt="loading..." />
       <SmallLogo src={smallLogo} alt="loading..." />
       <Grid container justify="center" alignItems="center" spacing={1}>
-        {videos.items
-          .filter((video) => video.id.kind === 'youtube#video')
-          .map((video) => {
-            return (
-              <Grid key={video.etag} item xs={12} sm={6} md={4} align="center">
-                <VideoCard video={video} />
-              </Grid>
-            );
-          })}
+        {filterVideos(videos, 'youtube#video').map((video) => {
+          return (
+            <Grid key={video.etag} item xs={12} sm={6} md={4} align="center">
+              <VideoCard video={video} />
+            </Grid>
+          );
+        })}
       </Grid>
     </Box>
   );

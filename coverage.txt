@@ -1,0 +1,19 @@
+
+> react-certification-2020@0.1.0 test C:\Users\srobles\Documents\Courses\REACT\react-certification-2020
+> react-scripts test "--coverage"
+
+-------------------|----------|----------|----------|----------|-------------------|
+File               |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-------------------|----------|----------|----------|----------|-------------------|
+All files          |      100 |      100 |      100 |      100 |                   |
+ components/App    |      100 |      100 |      100 |      100 |                   |
+  index.jsx        |      100 |      100 |      100 |      100 |                   |
+ components/NavBar |      100 |      100 |      100 |      100 |                   |
+  index.jsx        |      100 |      100 |      100 |      100 |                   |
+ pages/Home        |      100 |      100 |      100 |      100 |                   |
+  index.jsx        |      100 |      100 |      100 |      100 |                   |
+ utils             |      100 |      100 |      100 |      100 |                   |
+  filterVideos.js  |      100 |      100 |      100 |      100 |                   |
+-------------------|----------|----------|----------|----------|-------------------|
+
+Terminate batch job (Y/N)? 
