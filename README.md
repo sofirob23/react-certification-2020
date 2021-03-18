@@ -19,3 +19,12 @@ Once you have installed all the requirements. run the following commands.
     'npm start'
 
 After running those commands a new browser window will be opened with the application. 
+
+### Run tests
+To run tests run the following command.
+
+    'npm test -- --coverage'.
+
+You can save the test coverage in a txt file running the following command.
+
+    'npm test -- --coverage > ./coverage.txt'
