@@ -16,7 +16,7 @@ import {
   StyledNavBar,
   SearchBar,
   SearchIconStyled,
-} from './navBar-styling';
+} from './style';
 
 const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);

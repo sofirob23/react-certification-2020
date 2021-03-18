@@ -1,8 +1,8 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import { Logo, SmallLogo } from './Home.styling';
-import VideoCard from '../../components/VideoCard/VideoCard';
+import { Logo, SmallLogo } from './style';
+import VideoCard from '../../components/VideoCard';
 import logo from '../../utils/assets/logo.gif';
 import smallLogo from '../../utils/assets/small-logo.gif';
 import videos from '../../utils/youtube-videos-mock.json';
