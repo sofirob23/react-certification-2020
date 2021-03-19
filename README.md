@@ -15,16 +15,19 @@ This is being developed in React by Sofía Robles Sandoval.
 ### How To Run
 Once you have installed all the requirements. run the following commands.
     
-    'npm install'
-    'npm start'
+    npm install
+    npm start
 
 After running those commands a new browser window will be opened with the application. 
 
 ### Run tests
 To run tests run the following command.
 
-    'npm test -- --coverage'.
+    npm test -- --coverage
 
 You can save the test coverage in a txt file running the following command.
 
-    'npm test -- --coverage > ./coverage.txt'
+    npm test -- --coverage > ./coverage.txt
+
+### See live results
+Click [here](https://sofirob23-mini-challenge-2.netlify.app/) to see the application running
