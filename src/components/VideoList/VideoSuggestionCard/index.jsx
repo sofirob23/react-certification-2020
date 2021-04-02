@@ -1,0 +1,26 @@
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import { Card, Title, VideoPreview, StyledLink } from './style';
+
+const VideoSuggestionCard = (props) => {
+  const videoObject = {
+    pathname: `/video/${props.video.id.videoId}`,
+  };
+
+  return (
+    <StyledLink to={videoObject}>
+      <Card>
+        <Grid container spacing={1}>
+          <Grid item xs={4}>
+            <VideoPreview src={props.video.snippet.thumbnails.default.url} />
+          </Grid>
+          <Grid item xs={8}>
+            <Title>{props.video.snippet.title}</Title>
+          </Grid>
+        </Grid>
+      </Card>
+    </StyledLink>
+  );
+};
+
+export default VideoSuggestionCard;

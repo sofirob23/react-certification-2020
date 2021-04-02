@@ -5,21 +5,23 @@ require('typeface-lato');
 export const Title = styled.h1`
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
+  color: black;
 `;
 
 export const Description = styled.h1`
   font-family: 'Lato', sans-serif;
   text-align: justify;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 10px;
   padding: 5px;
+  color: black;
 `;
 
 export const Card = styled.div`
-  width: 300px;
-  height: 280px;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
   display: inline-block;
   padding-bottom: 10px;
@@ -31,6 +33,6 @@ export const Card = styled.div`
 `;
 
 export const VideoPreview = styled.img`
-  height: 120px;
-  width: 300px;
+  height: 90px;
+  width: 200px;
 `;
