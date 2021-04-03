@@ -10,11 +10,11 @@ const VideoInformation = () => {
   const globalState = useContext(store);
   const title =
     globalState.state.currentVideo.snippet === undefined
-      ? 'Video Tour | Welcome to Wizeline Guadalajara Video Tour | Welcome to Wizeline Guadalajara Video Tour | Welcome to Wizeline Guadalajara      '
+      ? ''
       : globalState.state.currentVideo.snippet.title;
   const description =
     globalState.state.currentVideo.snippet === undefined
-      ? 'This is the description dnajsdkahsjdhakjdhaskjdhakjdhjahdjkhsadkjsahda'
+      ? ''
       : globalState.state.currentVideo.snippet.description;
 
   return (

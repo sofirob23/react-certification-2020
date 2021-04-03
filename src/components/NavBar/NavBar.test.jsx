@@ -1,38 +1,46 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { createMount } from '@material-ui/core/test-utils';
-import Switch from '@material-ui/core/Switch';
-import { act } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
+import { store } from '../../state/store';
 import NavBar from './index';
 
 describe('NavBar Tests', () => {
-  let mount;
-
-  beforeAll(() => {
-    mount = createMount();
-  });
-
-  afterAll(() => {
-    mount.cleanUp();
-  });
+  const { Provider } = store;
+  const dispatch = jest.fn();
+  const state = {
+    videoList: [],
+    darkMode: false,
+    currentVideo: {},
+    currentVideoProfile: {},
+  };
 
   test('NavBar renders correctly', () => {
-    const tree = renderer.create(<NavBar />).toJSON();
+    const tree = renderer
+      .create(
+        <Provider value={{ dispatch, state }}>
+          <NavBar />
+        </Provider>
+      )
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('NavBar contains Dark Mode Toggle', () => {
-    const wrapper = mount(<NavBar />);
-    expect(wrapper.find(Switch)).toHaveLength(1);
+    render(
+      <Provider value={{ dispatch, state }}>
+        <NavBar />
+      </Provider>
+    );
+    expect(screen.getByText('Dark Mode')).toBeInTheDocument();
   });
 
-  test('NavBar switch changes value when toggled', async () => {
-    const wrapper = mount(<NavBar />);
-    const toggle = wrapper.find(Switch);
-    act(() => {
-      toggle.props().onChange({ target: { checked: true } });
-    });
-    wrapper.update();
-    expect(wrapper.find(Switch).props().checked).toBe(true);
+  test('NavBar contains SearchBar', () => {
+    render(
+      <Provider value={{ dispatch, state }}>
+        <NavBar />
+      </Provider>
+    );
+    expect(screen.getByPlaceholderText('Search')).toBeInTheDocument();
   });
 });

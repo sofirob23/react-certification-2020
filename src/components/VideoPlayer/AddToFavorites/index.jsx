@@ -19,7 +19,7 @@ const AddToFavorites = () => {
       ) : (
         <FavoriteBorderIcon color="primary" />
       )}
-      <FavoriteLabel>Add to Favorites</FavoriteLabel>
+      <FavoriteLabel data-testid="test-span">Add to Favorites</FavoriteLabel>
     </FavoriteButton>
   );
 };

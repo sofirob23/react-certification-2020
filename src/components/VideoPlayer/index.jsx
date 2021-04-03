@@ -6,7 +6,7 @@ import { VideoCanvas } from './style';
 import VideoInformation from './VideoInformation';
 
 const VideoPlayer = (props) => {
-  const url = `https://www.youtube.com/embed/${props.match.params.videoID}?controls=0&autoplay=1`;
+  const url = `https://www.youtube.com/embed/${props.match.params.videoID}?controls=0`;
   const { videoID } = props.match.params;
   const globalState = useContext(store);
   const { dispatch } = globalState;
@@ -41,11 +41,12 @@ const VideoPlayer = (props) => {
   return (
     <>
       <VideoCanvas
+        data-testid="video"
         allowFullScreen
         frameBorder="0"
         title={title}
         src={url}
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
       />
       <VideoInformation />
     </>

@@ -6,7 +6,7 @@ import VideoSuggestionCard from './VideoSuggestionCard';
 
 import { SuggestionsList } from './style';
 
-const VideoPlayer = () => {
+const VideoList = () => {
   const globalState = useContext(store);
   const videos =
     globalState.state.videoList.items === undefined
@@ -19,7 +19,7 @@ const VideoPlayer = () => {
         {videos.map((video) => {
           return (
             <Grid key={video.id.videoId} item xs={12}>
-              <VideoSuggestionCard video={video} />
+              <VideoSuggestionCard role="img" video={video} />
             </Grid>
           );
         })}
@@ -28,4 +28,4 @@ const VideoPlayer = () => {
   );
 };
 
-export default VideoPlayer;
+export default VideoList;
