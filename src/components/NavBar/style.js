@@ -13,7 +13,7 @@ export const StyledNavBar = styled(AppBar)`
     props.dark &&
     css`
       .MuiToolbar-root {
-        background: var(--darkblue);
+        background: var(--darkgrey);
         color: white;
       }
     `}

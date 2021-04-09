@@ -10,17 +10,17 @@ const VideoInformation = () => {
   const globalState = useContext(store);
   const title =
     globalState.state.currentVideo.snippet === undefined
-      ? ''
+      ? 'Title'
       : globalState.state.currentVideo.snippet.title;
   const description =
     globalState.state.currentVideo.snippet === undefined
-      ? ''
+      ? 'Description'
       : globalState.state.currentVideo.snippet.description;
 
   return (
     <>
       <Grid container spacing={1}>
-        <Title>{title}</Title>
+        <Title dark={globalState.state.darkMode ? 'true' : undefined}>{title}</Title>
         <Grid item xs={6}>
           <Profile />
         </Grid>
@@ -28,7 +28,9 @@ const VideoInformation = () => {
           <AddToFavorites />
         </Grid>
       </Grid>
-      <Description>{description}</Description>
+      <Description dark={globalState.state.darkMode ? 'true' : undefined}>
+        {description}
+      </Description>
     </>
   );
 };

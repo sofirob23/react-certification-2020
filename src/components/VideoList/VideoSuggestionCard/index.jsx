@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Grid from '@material-ui/core/Grid';
+import { store } from '../../../state/store';
 import { Card, Title, VideoPreview, StyledLink } from './style';
 
 const VideoSuggestionCard = (props) => {
+  const globalState = useContext(store);
   const videoObject = {
     pathname: `/video/${props.video.id.videoId}`,
   };
 
   return (
     <StyledLink to={videoObject}>
-      <Card>
+      <Card dark={globalState.state.darkMode ? 'true' : undefined}>
         <Grid container spacing={1}>
           <Grid item xs={4}>
             <VideoPreview src={props.video.snippet.thumbnails.default.url} />
           </Grid>
           <Grid item xs={8}>
-            <Title>{props.video.snippet.title}</Title>
+            <Title dark={globalState.state.darkMode ? 'true' : undefined}>
+              {props.video.snippet.title}
+            </Title>
           </Grid>
         </Grid>
       </Card>

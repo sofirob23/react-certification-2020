@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
 import AccountCircle from '@material-ui/icons/AccountCircle';

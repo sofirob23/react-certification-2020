@@ -2,11 +2,11 @@ import styled, { css } from 'styled-components';
 
 require('typeface-lato');
 
-export const VideoDetail = styled.h1`
+export const Message = styled.h1`
   font-family: 'Lato', sans-serif;
-  text-align: left;
+  text-align: center;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 50px;
   color: black;
   padding-left: 15px;
 
@@ -17,12 +17,11 @@ export const VideoDetail = styled.h1`
     `}
 `;
 
-export const StyledProfile = styled.div`
-  margin-left: 30px;
-  display: flex;
-`;
-
-export const ProfileIcon = styled.img`
-  border-radius: 50%;
-  width: 35px;
+export const Image = styled.img`
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 `;

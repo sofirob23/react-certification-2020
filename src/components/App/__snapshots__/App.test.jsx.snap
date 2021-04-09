@@ -3,7 +3,7 @@
 exports[`App Tests App renders correctly 1`] = `
 Array [
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-dmlrTW dhgCj MuiPaper-elevation4"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-iwyYcG fACDwV MuiPaper-elevation4"
   >
     <div
       className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -42,10 +42,11 @@ Array [
         </span>
       </button>
       <div
-        className="sc-idOhPF hdllOC"
+        className="sc-kfzAmx dlyrPV"
       >
         <div
-          className="sc-dIUggk fEQrla"
+          className="sc-fKFyDc cxwQCA"
+          onClick={[Function]}
         >
           <svg
             aria-hidden={true}
@@ -59,7 +60,7 @@ Array [
           </svg>
         </div>
         <div
-          className="MuiInputBase-root sc-hHftDr hZjNNv search-bar"
+          className="MuiInputBase-root sc-bBXqnf bhALXW search-bar"
           onClick={[Function]}
         >
           <input
@@ -77,7 +78,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-kfzAmx bdzydr"
+        className="sc-cxFLnm gZCzfi"
       >
         <svg
           aria-hidden={true}
@@ -91,7 +92,7 @@ Array [
         </svg>
       </div>
       <div
-        className="sc-fKFyDc fIfkMq FullDisplay"
+        className="sc-lmoMRL cGktHC FullDisplay"
       >
         <div
           className="MuiFormGroup-root ToggleGroup"
@@ -161,18 +162,729 @@ Array [
     className="MuiBox-root MuiBox-root-5"
   >
     <img
-      alt="loading..."
-      className="sc-bdfBwQ kDLakl"
+      alt="logo"
+      className="sc-bdfBwQ gbeGWW"
       src="logo.gif"
     />
     <img
-      alt="loading..."
-      className="sc-gsTCUz hUyxuf"
+      alt="logo"
+      className="sc-gsTCUz hvRuP"
+      src="logo-dark.png"
+    />
+    <img
+      alt="logo"
+      className="sc-dlfnbm ivQMdP"
       src="small-logo.gif"
+    />
+    <img
+      alt="logo"
+      className="sc-hKgILt jnheds"
+      src="small-logo-dark.png"
     />
     <div
       className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
-    />
+    >
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/undefined"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://yt3.ggpht.com/ytc/AAUvwnighSReQlmHl_S_vSfvnWBAG5Cw4A0YxtE0tm5OpQ=s240-c-k-c0xffffffff-no-rj-mo"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Wizeline transforms how teams build technology. Its customers accelerate the delivery of innovative products with proven solutions, which combine Wizeline's ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/nmXMgqjQzls"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Video Tour | Welcome to Wizeline Guadalajara
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/HYyRZiwBWc8"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/HYyRZiwBWc8/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline Guadalajara | Bringing Silicon Valley to Mexico
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Wizeline continues to offer a Silicon Valley culture in burgeoning innovation hubs like Mexico and Vietnam. In 2018, our Guadalajara team moved into a ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/Po3VwR_NNGk"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/Po3VwR_NNGk/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline hace sentir a empleados como en casa
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/7PtYNO6g7eI"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/7PtYNO6g7eI/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              We Are Wizeline
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Engineering a better tomorrow. Wizeline is a global software development company that helps its clients solve their biggest challenges with design and ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/YuW0CE_8i1I"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/YuW0CE_8i1I/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline Thrives in Mexico City
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Our vibrant Mexico City office is home to agile software engineers, talented UX designers, and brilliant data scientists. Learn about the rich history of Mexico City.
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/CHzlSGRvWPs"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/CHzlSGRvWPs/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              El plan de Wizeline, una empresa de inteligencia artificial, para ayudar a crecer la comunidad de ciencia de datos en CDMX y todo el país, a través de cursos ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/cjO2fJy8asM"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/cjO2fJy8asM/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              A Day in the Life of an Engineering Manager at Wizeline
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Fernando Espinoza shares his experience working as an engineering manager at Wizeline and mentoring other engineers. Learn about Fernando's passions ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/zClI9OjgKXM"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/zClI9OjgKXM/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline Technical Writing Academy | Featuring Eduardo Ocejo
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/8bz9R61oY5o"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/8bz9R61oY5o/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Silicon Valley en México
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Empresas de Silicon Valley buscan establecerse en México por el gran talento que hay en nuestro país. Es una investigación de Roberto Domínguez.
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/7dJFraOqcoQ"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/7dJFraOqcoQ/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Why Wizeline? featuring Juan Pablo Villa in Mexico City
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Juan Pablo, known as Gianpa at Wizeline, is a software engineer in our Mexico City office. Gianpa focuses on Android apps, is an integral part of our culture, ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/w-Qwc_XJrWc"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/w-Qwc_XJrWc/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline&#39;s 2020 Year in Review
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              There's no doubt that 2020 has been an unprecedented year. However, amidst all the chaos, we achieved remarkable growth in various areas of our business.
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/rjir_cHTl5w"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/rjir_cHTl5w/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Why Wizeline? featuring Hugo Lopez in Mexico City
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/DcFK1x3NHGY"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/DcFK1x3NHGY/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Why Wizeline? (We&#39;re Hiring in Mexico!)
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              A quick look at why people join Wizeline, what motivates us as a team and what it's like to work in our Guadalajara office. Learn more and apply here: ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/3BzYWAqZgFw"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/3BzYWAqZgFw/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Why Wizeline? featuring Oswaldo Herrera in Mexico City
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Oswaldo is a software engineering in Wizeline's Mexico City office. He joined Wizeline because of the camaraderie and deep sense of commitment of our teams.
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/3KVFmT-Tp2w"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/3KVFmT-Tp2w/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Caso de Éxito AWS: Wizeline [Spanish]
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Central de socios de APN - https://amzn.to/2S7tIXM Fundada en 2014, Wizeline es una compañía joven e innovadora que nació en la nube para ofrecer soporte ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/aKuPmY2m1Ro"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/aKuPmY2m1Ro/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline&#39;s 2019 Year in Review
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/24sTHUyWhRM"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/24sTHUyWhRM/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              [1 of 2] Wizeline CEO shares career lessons from Google
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Founder & CEO Bismarck Lepe on growth opportunities at Wizeline and his career-path experience as an early Google employee. Join our team!
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/IxGc1gSqB3A"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/IxGc1gSqB3A/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline Data Engineering featuring Tania Reyes
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Tania discovered her interest in Big Data while working at Wizeline and took Wizeline Academy courses to skill up and join the data team. Now, she works on ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/NP1gAnbeNno"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/NP1gAnbeNno/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Wizeline Querétaro | Mexico&#39;s New Knowledge Economy (We&#39;re hiring!)
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              A small but mighty (and growing) team, the Queretaro crew has taken ownership of growing the office and brand, speaking at university events, hosting tech ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/F6Krwu6lUc8"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/F6Krwu6lUc8/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Miriam Godinez | Women in Leadership at Wizeline
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Science and technology always caught Miriam's attention. One of her ultimate goals as a Senior Engineer Manager and Lead from the Mobile Team at Wizeline ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/RFq7gfvhtCk"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/RFq7gfvhtCk/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Welcome Back to Wizeline Vietnam | Extended Version
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Thanks to swift government action, the COVID-19 situation in Vietnam has reached a point where businesses are able to return to work and reopen offices.
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/E1Vq_A3WKK8"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/E1Vq_A3WKK8/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              How does Wizeline work?
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Wizeline builds teams with a mix of technical and non-technical talent to deliver better products, faster. Learn more about our consulting services: ...
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/ZmkslANDz0Q"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/ZmkslANDz0Q/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              12 Wishes from Wizeline | Happy Holidays 2019
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              
+            </h1>
+          </div>
+        </a>
+      </div>
+      <div
+        align="center"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+      >
+        <a
+          href="/video/Nss3EmTDD3s"
+          onClick={[Function]}
+        >
+          <div
+            className="sc-iBPRYJ kqBFda"
+          >
+            <img
+              className="sc-fubCfw kLgRUn"
+              src="https://i.ytimg.com/vi/Nss3EmTDD3s/mqdefault.jpg"
+            />
+            <h1
+              className="sc-jSgupP dCvESx"
+            >
+              Why Wizeline?
+            </h1>
+            <h1
+              className="sc-gKsewC cEhWPe"
+            >
+              Hear from our employees directly about what excites them about their roles here at Wizeline. Wizeline wants to hire the best and the brightest to accelerate their ...
+            </h1>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>,
 ]
 `;

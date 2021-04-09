@@ -14,7 +14,9 @@ const Profile = () => {
       ) : (
         <StyledProfile>
           <ProfileIcon src={profile.snippet.thumbnails.default.url} />
-          <VideoDetail>{profile.snippet.channelTitle}</VideoDetail>
+          <VideoDetail dark={globalState.state.darkMode ? 'true' : undefined}>
+            {profile.snippet.channelTitle}
+          </VideoDetail>
         </StyledProfile>
       )}
     </>

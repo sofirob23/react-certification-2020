@@ -45,6 +45,7 @@ exports[`NavBar Tests NavBar renders correctly 1`] = `
     >
       <div
         className="sc-gsTCUz gbTfoR"
+        onClick={[Function]}
       >
         <svg
           aria-hidden={true}

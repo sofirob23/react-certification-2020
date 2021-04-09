@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 require('typeface-lato');
 
@@ -9,6 +9,12 @@ export const FavoriteLabel = styled.span`
   text-align: center;
   padding-left: 3px;
   padding-bottom: 3px;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const FavoriteButton = styled.div`

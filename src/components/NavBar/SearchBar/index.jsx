@@ -26,6 +26,16 @@ const SearchBar = () => {
     }
   };
 
+  const onClick = async () => {
+    const queryParams = {
+      type: 'video',
+      q: querySearch,
+      maxResults: 25,
+    };
+    const response = await youtubeSearch(queryParams);
+    dispatch({ type: 'search', payload: response.data });
+  };
+
   useEffect(() => {
     const fetchVideos = async () => {
       if (globalState.state.videoList.length === 0) {
@@ -43,7 +53,7 @@ const SearchBar = () => {
 
   return (
     <SearchBarStyled>
-      <SearchIconStyled>
+      <SearchIconStyled onClick={onClick}>
         <SearchIcon />
       </SearchIconStyled>
       <InputStyled
