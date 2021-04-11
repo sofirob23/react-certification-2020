@@ -8,11 +8,6 @@ const VideoCard = (props) => {
 
   const videoObject = {
     pathname: `/video/${props.video.id.videoId}`,
-    state: {
-      videoId: props.video.id.videoId,
-      title: props.video.snippet.title,
-      description: props.video.snippet.description,
-    },
   };
 
   return (

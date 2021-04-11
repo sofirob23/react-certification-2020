@@ -8,14 +8,8 @@ import Profile from '../Profile';
 
 const VideoInformation = () => {
   const globalState = useContext(store);
-  const title =
-    globalState.state.currentVideo.snippet === undefined
-      ? 'Title'
-      : globalState.state.currentVideo.snippet.title;
-  const description =
-    globalState.state.currentVideo.snippet === undefined
-      ? 'Description'
-      : globalState.state.currentVideo.snippet.description;
+  const title = globalState?.state?.currentVideo?.snippet?.title;
+  const description = globalState?.state?.currentVideo?.snippet?.description;
 
   return (
     <>

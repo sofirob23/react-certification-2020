@@ -13,11 +13,8 @@ import videos from '../../utils/youtube-videos-mock.json';
 
 const HomePage = () => {
   const globalState = useContext(store);
-  /* const videos =
-    globalState.state.videoList.items === undefined
-      ? []
-      : globalState.state.videoList.items; */
-
+  /* const videos = globalState.state.videoList.items || [];
+   */
   useEffect(() => {
     if (globalState.state.darkMode) {
       document.body.style.backgroundColor = 'var(--darkgrey)';
@@ -52,7 +49,7 @@ const HomePage = () => {
         dark={globalState.state.darkMode ? 'true' : undefined}
         light={globalState.state.darkMode ? undefined : 'true'}
       />
-      {videos === [] ? (
+      {videos.items.length === undefined || videos.items.length === 0 ? (
         <NoResults />
       ) : (
         <Grid container justify="center" alignItems="center" spacing={1}>

@@ -6,7 +6,7 @@ import videos from '../../utils/youtube-videos-mock.json';
 import { store } from '../../state/store';
 import VideoList from './index';
 
-describe('Video Card Suggestion Tests', () => {
+describe('Video List Tests', () => {
   const { Provider } = store;
   const dispatch = jest.fn();
   const state = {
