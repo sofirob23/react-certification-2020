@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Router, StaticRouter } from 'react-router';
 import { createMemoryHistory } from 'history';
-import videoMock from '../../../utils/video-mock.json';
+import videoMock from '../../../utils/mocks/video-mock.json';
 import { store } from '../../../state/store';
 import VideoSuggestionCard from './index';
 

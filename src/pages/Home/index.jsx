@@ -9,19 +9,34 @@ import smallLogo from '../../utils/assets/small-logo.gif';
 import logoDark from '../../utils/assets/logo-dark.png';
 import smallLogoDark from '../../utils/assets/small-logo-dark.png';
 import { store } from '../../state/store';
-import videos from '../../utils/youtube-videos-mock.json';
+import youtubeSearch from '../../state/youtube-requests';
+// import videos from '../../utils/mocks/youtube-videos-mock.json';
 
 const HomePage = () => {
   const globalState = useContext(store);
-  /* const videos = globalState.state.videoList.items || [];
-   */
+  const { dispatch } = globalState;
+
+  const videos = globalState.state.videoList.items || [];
+
   useEffect(() => {
     if (globalState.state.darkMode) {
       document.body.style.backgroundColor = 'var(--darkgrey)';
     } else {
       document.body.style.backgroundColor = 'white';
     }
-  }, [globalState]);
+    const fetchVideos = async () => {
+      if (globalState.state.videoList.length === 0) {
+        const queryParams = {
+          type: 'video',
+          q: ' ',
+          maxResults: 25,
+        };
+        const response = await youtubeSearch(queryParams);
+        dispatch({ type: 'search', payload: response.data });
+      }
+    };
+    fetchVideos();
+  }, [dispatch, globalState]);
 
   return (
     <Box mx="5%">
@@ -49,11 +64,11 @@ const HomePage = () => {
         dark={globalState.state.darkMode ? 'true' : undefined}
         light={globalState.state.darkMode ? undefined : 'true'}
       />
-      {videos.items.length === undefined || videos.items.length === 0 ? (
+      {videos.length === undefined || videos.length === 0 ? (
         <NoResults />
       ) : (
         <Grid container justify="center" alignItems="center" spacing={1}>
-          {videos.items.map((video) => {
+          {videos.map((video) => {
             return (
               <Grid key={video.id.videoId} item xs={12} sm={6} md={3} align="center">
                 <VideoCard video={video} />

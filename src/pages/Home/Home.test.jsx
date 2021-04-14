@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
 import { StaticRouter } from 'react-router';
-import videos from '../../utils/youtube-videos-mock.json';
+import videos from '../../utils/mocks/youtube-videos-mock.json';
 import { store } from '../../state/store';
 import Home from './index';
 

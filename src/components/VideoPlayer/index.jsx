@@ -22,17 +22,31 @@ const VideoPlayer = (props) => {
       };
       const response = await youtubeSearch(queryParams);
 
-      queryParams = {
-        type: 'channel',
-        q: response.data.items[0].snippet.channelTitle,
-        maxResults: 1,
-      };
-      const responseProfile = await youtubeSearch(queryParams);
-      dispatch({
-        type: 'play',
-        video: response.data.items[0],
-        profile: responseProfile.data.items[0],
-      });
+      if (response !== undefined) {
+        queryParams = {
+          type: 'channel',
+          q:
+            response.data !== undefined
+              ? response.data.items[0].snippet.channelTitle
+              : '',
+          maxResults: 1,
+        };
+        const responseProfile = await youtubeSearch(queryParams);
+        dispatch({
+          type: 'play',
+          video: response.data !== undefined ? response.data.items[0] : '',
+          profile:
+            responseProfile.data !== undefined ? responseProfile.data.items[0] : '',
+        });
+
+        queryParams = {
+          type: 'video',
+          maxResults: 10,
+          q: response.data !== undefined ? response.data.items[0].snippet.title : '',
+        };
+        const responseList = await youtubeSearch(queryParams);
+        dispatch({ type: 'search', payload: responseList.data });
+      }
     };
     fetchVideos();
   }, [dispatch, videoID]);

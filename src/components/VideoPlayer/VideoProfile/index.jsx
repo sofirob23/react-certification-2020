@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { store } from '../../../state/store';
-
+// import profile from '../../../utils/mocks/profile-mock.json';
 import { StyledProfile, VideoDetail, ProfileIcon } from './style';
 
-const Profile = () => {
+const VideoProfile = () => {
   const globalState = useContext(store);
   const profile = globalState.state.currentVideoProfile;
 
@@ -23,4 +23,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default VideoProfile;

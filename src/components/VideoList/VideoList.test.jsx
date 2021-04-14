@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { StaticRouter } from 'react-router';
-import videoMock from '../../utils/video-mock.json';
-import videos from '../../utils/youtube-videos-mock.json';
+import videoMock from '../../utils/mocks/video-mock.json';
+import videos from '../../utils/mocks/youtube-videos-mock.json';
 import { store } from '../../state/store';
 import VideoList from './index';
 

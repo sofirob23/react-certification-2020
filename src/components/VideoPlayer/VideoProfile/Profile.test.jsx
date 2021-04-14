@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
-import profileMock from '../../../utils/profile-mock.json';
+import profileMock from '../../../utils/mocks/profile-mock.json';
 import { store } from '../../../state/store';
 import Profile from './index';
 

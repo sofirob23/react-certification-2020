@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
 import { store } from '../../state/store';
 import SearchBar from './SearchBar';
 import Toggle from './Toggle';
+import Profile from './Profile';
 
-import { FullDisplay, ProfileCollapse, StyledNavBar } from './style';
+import { FullDisplay, StyledNavBar } from './style';
 
 const NavBar = () => {
   const globalState = useContext(store);
@@ -23,13 +23,10 @@ const NavBar = () => {
             <MenuIcon />
           </IconButton>
           <SearchBar />
-          <ProfileCollapse>
-            <AccountCircle fontSize="large" />
-          </ProfileCollapse>
           <FullDisplay className="FullDisplay">
             <Toggle />
-            <AccountCircle fontSize="large" />
           </FullDisplay>
+          <Profile />
         </Toolbar>
       </StyledNavBar>
     </>

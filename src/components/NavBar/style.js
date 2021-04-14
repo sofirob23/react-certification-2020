@@ -19,18 +19,6 @@ export const StyledNavBar = styled(AppBar)`
     `}
 `;
 
-export const ProfileCollapse = styled.div`
-  @media (min-width: 600px) {
-    display: none;
-  }
-  margin-left: auto;
-  display: flex;
-
-  .MuiSvgIcon-root {
-    align-self: center;
-  }
-`;
-
 export const FullDisplay = styled.div`
   @media (max-width: 600px) {
     display: none;
