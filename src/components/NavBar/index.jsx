@@ -1,61 +1,34 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import IconButton from '@material-ui/core/IconButton';
-import Switch from '@material-ui/core/Switch';
 import Toolbar from '@material-ui/core/Toolbar';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+import { store } from '../../state/store';
+import SearchBar from './SearchBar';
+import Toggle from './Toggle';
 
-import {
-  FullDisplay,
-  InputStyled,
-  ProfileCollapse,
-  StyledNavBar,
-  SearchBar,
-  SearchIconStyled,
-} from './style';
+import { FullDisplay, ProfileCollapse, StyledNavBar } from './style';
 
 const NavBar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const handleChange = () => {
-    setDarkMode(!darkMode);
-  };
+  const globalState = useContext(store);
 
   return (
     <>
-      <StyledNavBar dark={darkMode ? 'true' : undefined} position="sticky">
+      <StyledNavBar
+        dark={globalState.state.darkMode ? 'true' : undefined}
+        position="sticky"
+      >
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <SearchBar>
-            <SearchIconStyled>
-              <SearchIcon />
-            </SearchIconStyled>
-            <InputStyled className="search-bar" placeholder="Search" />
-          </SearchBar>
-
+          <SearchBar />
           <ProfileCollapse>
             <AccountCircle fontSize="large" />
           </ProfileCollapse>
           <FullDisplay className="FullDisplay">
-            <FormGroup className="ToggleGroup">
-              <FormControlLabel
-                control={
-                  <Switch
-                    id="ToggleSwitch"
-                    checked={darkMode}
-                    onChange={handleChange}
-                    color="default"
-                  />
-                }
-                label="Dark Mode"
-              />
-            </FormGroup>
+            <Toggle />
             <AccountCircle fontSize="large" />
           </FullDisplay>
         </Toolbar>

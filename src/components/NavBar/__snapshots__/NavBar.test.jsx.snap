@@ -2,7 +2,7 @@
 
 exports[`NavBar Tests NavBar renders correctly 1`] = `
 <header
-  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-bdfBwQ eVGGxJ MuiPaper-elevation4"
+  className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-hKgILt hTgMmO MuiPaper-elevation4"
 >
   <div
     className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -41,10 +41,10 @@ exports[`NavBar Tests NavBar renders correctly 1`] = `
       </span>
     </button>
     <div
-      className="sc-gsTCUz bLqTeC"
+      className="sc-bdfBwQ kKgKFO"
     >
       <div
-        className="sc-dlfnbm iCqeea"
+        className="sc-gsTCUz gbTfoR"
       >
         <svg
           aria-hidden={true}
@@ -58,17 +58,20 @@ exports[`NavBar Tests NavBar renders correctly 1`] = `
         </svg>
       </div>
       <div
-        className="MuiInputBase-root sc-hKgILt grQlUy search-bar"
+        className="MuiInputBase-root sc-dlfnbm dUOiSk search-bar"
         onClick={[Function]}
       >
         <input
           className="MuiInputBase-input"
+          id="search-bar"
           onAnimationStart={[Function]}
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          onKeyDown={[Function]}
           placeholder="Search"
           type="text"
+          value=""
         />
       </div>
     </div>
