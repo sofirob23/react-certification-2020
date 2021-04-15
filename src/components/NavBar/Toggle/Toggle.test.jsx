@@ -6,7 +6,6 @@ import { store } from '../../../state/store';
 import Toggle from './index';
 
 describe('Toggle Tests', () => {
-
   const { Provider } = store;
   const dispatch = jest.fn();
   const state = {

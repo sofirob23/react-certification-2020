@@ -30,4 +30,4 @@ You can save the test coverage in a txt file running the following command.
     npm test -- --coverage > ./coverage.txt
 
 ### See live results
-Click [here](https://sofirob23-mini-challenge-3.netlify.app/) to see the application running
+Click [here](https://sofirob23-mini-challenge-4.netlify.app/) to see the application running
