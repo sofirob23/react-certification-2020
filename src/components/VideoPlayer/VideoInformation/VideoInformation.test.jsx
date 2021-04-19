@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
-import videoMock from '../../../utils/video-mock.json';
+import videoMock from '../../../utils/mocks/video-mock.json';
 import { store } from '../../../state/store';
 import VideoInformation from './index';
 

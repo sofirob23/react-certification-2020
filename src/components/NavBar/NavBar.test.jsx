@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
 import { store } from '../../state/store';
@@ -13,18 +12,8 @@ describe('NavBar Tests', () => {
     darkMode: false,
     currentVideo: {},
     currentVideoProfile: {},
+    loggedUser: null,
   };
-
-  test('NavBar renders correctly', () => {
-    const tree = renderer
-      .create(
-        <Provider value={{ dispatch, state }}>
-          <NavBar />
-        </Provider>
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 
   test('NavBar contains Dark Mode Toggle', () => {
     render(

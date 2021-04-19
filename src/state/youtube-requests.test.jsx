@@ -1,5 +1,5 @@
 import axios from 'axios';
-import videos from '../utils/youtube-videos-mock.json';
+import videos from '../utils/mocks/youtube-videos-mock.json';
 import youtubeSearch from './youtube-requests';
 
 jest.mock('axios');

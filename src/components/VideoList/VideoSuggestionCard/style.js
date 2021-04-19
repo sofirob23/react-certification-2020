@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 require('typeface-lato');
@@ -12,6 +12,12 @@ export const Title = styled.h1`
   color: black;
   margin-left: 5px;
   margin-right: 10px;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const VideoDetail = styled.h1`
@@ -21,6 +27,12 @@ export const VideoDetail = styled.h1`
   font-size: 10px;
   color: black;
   margin-left: 30px;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const Card = styled.div`
@@ -32,6 +44,15 @@ export const Card = styled.div`
   @media (min-width: 600px) {
     margin-left: 60px;
   }
+
+  ${(props) =>
+    props.dark &&
+    css`
+      background: var(--darkgrey);
+      :hover {
+        background-color: var(--hovergrey);
+      }
+    `}
 `;
 
 export const VideoPreview = styled.img`

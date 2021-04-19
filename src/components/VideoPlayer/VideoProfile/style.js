@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 require('typeface-lato');
 
@@ -9,6 +9,12 @@ export const VideoDetail = styled.h1`
   font-size: 15px;
   color: black;
   padding-left: 15px;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const StyledProfile = styled.div`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 require('typeface-lato');
 
@@ -8,6 +8,12 @@ export const Title = styled.h1`
   font-size: 15px;
   padding: 5px;
   color: black;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const Description = styled.h1`
@@ -17,6 +23,12 @@ export const Description = styled.h1`
   font-size: 10px;
   padding: 5px;
   color: black;
+
+  ${(props) =>
+    props.dark &&
+    css`
+      color: white;
+    `}
 `;
 
 export const Card = styled.div`
@@ -30,6 +42,15 @@ export const Card = styled.div`
   :hover {
     background-color: var(--lightgrey);
   }
+
+  ${(props) =>
+    props.dark &&
+    css`
+      background: var(--darkgrey);
+      :hover {
+        background-color: var(--hovergrey);
+      }
+    `}
 `;
 
 export const VideoPreview = styled.img`

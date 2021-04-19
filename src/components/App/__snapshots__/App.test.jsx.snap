@@ -3,7 +3,7 @@
 exports[`App Tests App renders correctly 1`] = `
 Array [
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-dmlrTW dhgCj MuiPaper-elevation4"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-iJuUWI cyoiiW MuiPaper-elevation4"
   >
     <div
       className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -42,10 +42,11 @@ Array [
         </span>
       </button>
       <div
-        className="sc-idOhPF hdllOC"
+        className="sc-kfzAmx dlyrPV"
       >
         <div
-          className="sc-dIUggk fEQrla"
+          className="sc-fKFyDc cxwQCA"
+          onClick={[Function]}
         >
           <svg
             aria-hidden={true}
@@ -59,7 +60,7 @@ Array [
           </svg>
         </div>
         <div
-          className="MuiInputBase-root sc-hHftDr hZjNNv search-bar"
+          className="MuiInputBase-root sc-bBXqnf bhALXW search-bar"
           onClick={[Function]}
         >
           <input
@@ -77,21 +78,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-kfzAmx bdzydr"
-      >
-        <svg
-          aria-hidden={true}
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-          />
-        </svg>
-      </div>
-      <div
-        className="sc-fKFyDc fIfkMq FullDisplay"
+        className="sc-giIncl fZXVRp FullDisplay"
       >
         <div
           className="MuiFormGroup-root ToggleGroup"
@@ -144,10 +131,15 @@ Array [
             </span>
           </label>
         </div>
+      </div>
+      <div
+        className="sc-iwyYcG gUPDXL"
+      >
         <svg
           aria-hidden={true}
           className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
           focusable="false"
+          onClick={[Function]}
           viewBox="0 0 24 24"
         >
           <path
@@ -161,18 +153,35 @@ Array [
     className="MuiBox-root MuiBox-root-5"
   >
     <img
-      alt="loading..."
-      className="sc-bdfBwQ kDLakl"
+      alt="logo"
+      className="sc-bdfBwQ gbeGWW"
       src="logo.gif"
     />
     <img
-      alt="loading..."
-      className="sc-gsTCUz hUyxuf"
+      alt="logo"
+      className="sc-gsTCUz hvRuP"
+      src="logo-dark.png"
+    />
+    <img
+      alt="logo"
+      className="sc-dlfnbm ivQMdP"
       src="small-logo.gif"
     />
-    <div
-      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    <img
+      alt="logo"
+      className="sc-hKgILt jnheds"
+      src="small-logo-dark.png"
     />
+    <img
+      alt="Not Found "
+      className="sc-jrAGrp ekFCau"
+      src="404.gif"
+    />
+    <h1
+      className="sc-pFZIQ pagie"
+    >
+      No results found!
+    </h1>
   </div>,
 ]
 `;

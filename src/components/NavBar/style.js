@@ -13,22 +13,10 @@ export const StyledNavBar = styled(AppBar)`
     props.dark &&
     css`
       .MuiToolbar-root {
-        background: var(--darkblue);
+        background: var(--darkgrey);
         color: white;
       }
     `}
-`;
-
-export const ProfileCollapse = styled.div`
-  @media (min-width: 600px) {
-    display: none;
-  }
-  margin-left: auto;
-  display: flex;
-
-  .MuiSvgIcon-root {
-    align-self: center;
-  }
 `;
 
 export const FullDisplay = styled.div`
