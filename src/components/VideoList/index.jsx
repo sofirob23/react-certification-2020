@@ -13,12 +13,12 @@ const VideoList = (props) => {
     : globalState.state.videoList.items || [];
 
   return (
-    <SuggestionsList>
+    <SuggestionsList {...props}>
       <Grid container spacing={3}>
         {videos.map((video) => {
           return (
             <Grid key={video.id.videoId} item xs={12}>
-              <VideoSuggestionCard role="img" video={video} />
+              <VideoSuggestionCard favorites={props.favorites} role="img" video={video} />
             </Grid>
           );
         })}

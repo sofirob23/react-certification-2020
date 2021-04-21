@@ -5,6 +5,7 @@ import { Card, Title, VideoPreview, StyledLink } from './style';
 
 const VideoSuggestionCard = (props) => {
   const globalState = useContext(store);
+  console.log('Props', props);
   const videoObject = props.favorites
     ? { pathname: `/favorites/${props.video.id.videoId}` }
     : {
