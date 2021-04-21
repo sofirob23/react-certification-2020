@@ -38,7 +38,6 @@ const Profile = () => {
         return;
       }
       profile = profileResult;
-      console.log(profile);
       myStorage.setItem('loggedUser', JSON.stringify(profile));
       dispatch({ type: 'login', payload: profile });
     });
