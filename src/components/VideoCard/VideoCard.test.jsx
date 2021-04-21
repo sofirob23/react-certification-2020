@@ -42,4 +42,29 @@ describe('Video Card Tests', () => {
     const newPath = `/video/${videoMock.id.videoId}`;
     expect(history.location.pathname).toBe(newPath);
   });
+
+  test('Video Card from favorites contains icon', () => {
+    render(
+      <Provider value={{ dispatch, state }}>
+        <StaticRouter>
+          <VideoCard video={videoMock} favorites />
+        </StaticRouter>
+      </Provider>
+    );
+    expect(screen.getByTestId('favorite-icon')).toBeInTheDocument();
+  });
+
+  test('Video Card favorite redirects to favorites on Click', () => {
+    const history = createMemoryHistory();
+    render(
+      <Provider value={{ dispatch, state }}>
+        <Router history={history}>
+          <VideoCard video={videoMock} favorites />
+        </Router>
+      </Provider>
+    );
+    fireEvent.click(screen.getByRole('img'));
+    const newPath = `/favorites/${videoMock.id.videoId}`;
+    expect(history.location.pathname).toBe(newPath);
+  });
 });

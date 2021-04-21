@@ -23,4 +23,14 @@ describe('No Results Tests', () => {
     expect(screen.getByRole('img')).toBeInTheDocument();
     expect(screen.getByText('No results found!')).toBeInTheDocument();
   });
+
+  test('No Results renders no favorites found', () => {
+    render(
+      <Provider value={{ dispatch, state }}>
+        <NoResults favorites />
+      </Provider>
+    );
+    expect(screen.getByRole('img')).toBeInTheDocument();
+    expect(screen.getByText('No Favorites found!')).toBeInTheDocument();
+  });
 });

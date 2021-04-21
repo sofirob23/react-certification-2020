@@ -35,7 +35,11 @@ const VideoCard = (props) => {
         </Description>
         {props.favorites === true ? (
           <FavoritesIcon>
-            <FavoriteIcon color="primary" onClick={removeFromFavorite} />{' '}
+            <FavoriteIcon
+              data-testid="favorite-icon"
+              color="primary"
+              onClick={removeFromFavorite}
+            />{' '}
           </FavoritesIcon>
         ) : (
           <></>

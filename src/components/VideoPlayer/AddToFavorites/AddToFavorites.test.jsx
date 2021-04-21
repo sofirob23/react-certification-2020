@@ -6,6 +6,7 @@ import AddToFavorites from './index';
 describe('Add to Favorites Tests', () => {
   const { Provider } = store;
   const dispatch = jest.fn();
+
   const state = {
     videoList: [],
     darkMode: false,
