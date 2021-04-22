@@ -8,6 +8,8 @@ Please refere to the following [GIST](https://gist.github.com/erickwize/d7311bfc
 This application consists on a video player. It allows users to search for different videos and keep a list of favorites. 
 This is being developed in React by Sofía Robles Sandoval.
 
+It uses the [Youtube API](https://developers.google.com/youtube/v3/getting-started) and authorization from [Auth0](https://auth0.com/docs/)
+
 ### Requirements
     - Node v14.15.4.
     - npm v14.15.4.
@@ -30,4 +32,4 @@ You can save the test coverage in a txt file running the following command.
     npm test -- --coverage > ./coverage.txt
 
 ### See live results
-Click [here](https://sofirob23-mini-challenge-4.netlify.app/) to see the application running
+Click [here](https://sofirob23-mini-challenge-5.netlify.app/) to see the application running
