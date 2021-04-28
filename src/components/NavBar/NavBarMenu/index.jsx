@@ -45,7 +45,7 @@ const NavBarMenu = () => {
                 <ListItemText primary="Home" />
               </ListItem>
             </StyledLink>
-            {globalState.state.loggedUser !== null ? (
+            {globalState.state.loggedUser && (
               <>
                 <Divider />
                 <StyledLink
@@ -60,8 +60,6 @@ const NavBarMenu = () => {
                   </ListItem>
                 </StyledLink>
               </>
-            ) : (
-              <> </>
             )}
           </List>
         </ColumnMenu>

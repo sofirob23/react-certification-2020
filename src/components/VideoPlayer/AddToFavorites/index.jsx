@@ -51,9 +51,9 @@ const AddToFavorites = () => {
   return (
     <FavoriteButton onClick={onClick}>
       {selected ? (
-        <FavoriteIcon color="primary" />
+        <FavoriteIcon data-testid="favorite-icon" color="primary" />
       ) : (
-        <FavoriteBorderIcon color="primary" />
+        <FavoriteBorderIcon data-testid="favorite-icon-border" color="primary" />
       )}
       <FavoriteLabel
         data-testid="test-span"

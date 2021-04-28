@@ -10,7 +10,7 @@ import Favorites from './index';
 describe('Favorites Tests', () => {
   const { Provider } = store;
   const dispatch = jest.fn();
-  const state = {
+  let state = {
     videoList: [],
     darkMode: false,
     currentVideo: {},
@@ -30,5 +30,24 @@ describe('Favorites Tests', () => {
     expect(screen.getAllByRole('img').length).toBeGreaterThan(1);
     expect(screen.getByText(videos.items[1].snippet.title)).toBeInTheDocument();
     expect(screen.getByText(videos.items[1].snippet.description)).toBeInTheDocument();
+  });
+
+  test('Renders No favorites found when favorites is empty', () => {
+    state = {
+      videoList: [],
+      darkMode: false,
+      currentVideo: {},
+      currentVideoProfile: {},
+      favorites: [],
+      loggedUser: mockUser,
+    };
+    render(
+      <StaticRouter>
+        <Provider value={{ dispatch, state }}>
+          <Favorites />
+        </Provider>
+      </StaticRouter>
+    );
+    expect(screen.getByText('No Favorites found!')).toBeInTheDocument();
   });
 });

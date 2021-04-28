@@ -28,10 +28,12 @@ const Favorites = () => {
         <Box mx="5%">
           <Grid container justify="center" alignItems="center" spacing={1}>
             {videos.map((video) => {
-              return video.id && (
-                <Grid key={video.id.videoId} item xs={12} sm={6} md={3} align="center">
-                  <VideoCard video={video} favorites />
-                </Grid>
+              return (
+                video.id && (
+                  <Grid key={video.id.videoId} item xs={12} sm={6} md={3} align="center">
+                    <VideoCard video={video} favorites />
+                  </Grid>
+                )
               );
             })}
           </Grid>
