@@ -33,7 +33,7 @@ const VideoCard = (props) => {
         <Description dark={globalState.state.darkMode ? 'true' : undefined}>
           {props.video.snippet.description}
         </Description>
-        {props.favorites === true ? (
+        {props.favorites && (
           <FavoritesIcon>
             <FavoriteIcon
               data-testid="favorite-icon"
@@ -41,8 +41,6 @@ const VideoCard = (props) => {
               onClick={removeFromFavorite}
             />{' '}
           </FavoritesIcon>
-        ) : (
-          <></>
         )}
       </Card>
     </Link>
