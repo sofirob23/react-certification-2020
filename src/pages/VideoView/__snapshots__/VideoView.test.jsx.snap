@@ -34,6 +34,7 @@ exports[`VideoView Tests VideoView renders correctly 1`] = `
           <svg
             aria-hidden={true}
             className="MuiSvgIcon-root MuiSvgIcon-colorPrimary"
+            data-testid="favorite-icon-border"
             focusable="false"
             viewBox="0 0 24 24"
           >

@@ -3,7 +3,7 @@
 exports[`App Tests App renders correctly 1`] = `
 Array [
   <header
-    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-iJuUWI cyoiiW MuiPaper-elevation4"
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary sc-hiSbYr fBFGvY MuiPaper-elevation4"
   >
     <div
       className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -13,6 +13,7 @@ Array [
         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart"
         disabled={false}
         onBlur={[Function]}
+        onClick={[Function]}
         onDragLeave={[Function]}
         onFocus={[Function]}
         onKeyDown={[Function]}
@@ -42,10 +43,10 @@ Array [
         </span>
       </button>
       <div
-        className="sc-kfzAmx dlyrPV"
+        className="sc-iwyYcG bqCchE"
       >
         <div
-          className="sc-fKFyDc cxwQCA"
+          className="sc-cxFLnm fdjSIL"
           onClick={[Function]}
         >
           <svg
@@ -60,7 +61,7 @@ Array [
           </svg>
         </div>
         <div
-          className="MuiInputBase-root sc-bBXqnf bhALXW search-bar"
+          className="MuiInputBase-root sc-lmoMRL bclAbu search-bar"
           onClick={[Function]}
         >
           <input
@@ -78,7 +79,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-giIncl fZXVRp FullDisplay"
+        className="sc-gWHgXt gCsRBI FullDisplay"
       >
         <div
           className="MuiFormGroup-root ToggleGroup"
@@ -133,11 +134,12 @@ Array [
         </div>
       </div>
       <div
-        className="sc-iwyYcG gUPDXL"
+        className="sc-iJuUWI bOHUio"
       >
         <svg
           aria-hidden={true}
           className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+          data-testid="profile-icon"
           focusable="false"
           onClick={[Function]}
           viewBox="0 0 24 24"
@@ -154,31 +156,31 @@ Array [
   >
     <img
       alt="logo"
-      className="sc-bdfBwQ gbeGWW"
+      className="sc-pFZIQ enngrm"
       src="logo.gif"
     />
     <img
       alt="logo"
-      className="sc-gsTCUz hvRuP"
+      className="sc-jrAGrp WLzRT"
       src="logo-dark.png"
     />
     <img
       alt="logo"
-      className="sc-dlfnbm ivQMdP"
+      className="sc-kEjbxe iNUrMP"
       src="small-logo.gif"
     />
     <img
       alt="logo"
-      className="sc-hKgILt jnheds"
+      className="sc-iqHYGH fKZVZr"
       src="small-logo-dark.png"
     />
     <img
       alt="Not Found "
-      className="sc-jrAGrp ekFCau"
+      className="sc-gKsewC odiSw"
       src="404.gif"
     />
     <h1
-      className="sc-pFZIQ pagie"
+      className="sc-jSgupP kMTDRp"
     >
       No results found!
     </h1>

@@ -32,4 +32,22 @@ describe('NavBar Tests', () => {
     );
     expect(screen.getByPlaceholderText('Search')).toBeInTheDocument();
   });
+
+  test('NavBar contains Profile', () => {
+    render(
+      <Provider value={{ dispatch, state }}>
+        <NavBar />
+      </Provider>
+    );
+    expect(screen.getByTestId('profile-icon')).toBeInTheDocument();
+  });
+
+  test('NavBar contains Menu Button', () => {
+    render(
+      <Provider value={{ dispatch, state }}>
+        <NavBar />
+      </Provider>
+    );
+    expect(screen.getByLabelText('menu')).toBeInTheDocument();
+  });
 });

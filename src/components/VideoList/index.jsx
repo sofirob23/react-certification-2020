@@ -6,17 +6,19 @@ import VideoSuggestionCard from './VideoSuggestionCard';
 
 import { SuggestionsList } from './style';
 
-const VideoList = () => {
+const VideoList = (props) => {
   const globalState = useContext(store);
-  const videos = globalState.state.videoList.items || [];
+  const videos = props.favorites
+    ? globalState.state.favorites || []
+    : globalState.state.videoList.items || [];
 
   return (
-    <SuggestionsList>
+    <SuggestionsList {...props}>
       <Grid container spacing={3}>
         {videos.map((video) => {
           return (
             <Grid key={video.id.videoId} item xs={12}>
-              <VideoSuggestionCard role="img" video={video} />
+              <VideoSuggestionCard favorites={props.favorites} role="img" video={video} />
             </Grid>
           );
         })}

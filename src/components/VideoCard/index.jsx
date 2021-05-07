@@ -1,13 +1,26 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import { store } from '../../state/store';
-import { Card, Description, Title, VideoPreview } from './style';
+import { Card, Description, FavoritesIcon, Title, VideoPreview } from './style';
 
 const VideoCard = (props) => {
   const globalState = useContext(store);
+  const { dispatch } = globalState;
+  const myStorage = window.localStorage;
+  const videoObject = props.favorites
+    ? { pathname: `/favorites/${props.video.id.videoId}` }
+    : {
+        pathname: `/video/${props.video.id.videoId}`,
+      };
 
-  const videoObject = {
-    pathname: `/video/${props.video.id.videoId}`,
+  const removeFromFavorite = () => {
+    let favoriteList = JSON.parse(myStorage.getItem('favorites')) || [];
+    favoriteList = favoriteList.filter(
+      (video) => video.id.videoId !== globalState.state.currentVideo.id.videoId
+    );
+    myStorage.setItem('favorites', JSON.stringify(favoriteList));
+    dispatch({ type: 'removeFavorite', payload: favoriteList });
   };
 
   return (
@@ -20,6 +33,15 @@ const VideoCard = (props) => {
         <Description dark={globalState.state.darkMode ? 'true' : undefined}>
           {props.video.snippet.description}
         </Description>
+        {props.favorites && (
+          <FavoritesIcon>
+            <FavoriteIcon
+              data-testid="favorite-icon"
+              color="primary"
+              onClick={removeFromFavorite}
+            />{' '}
+          </FavoritesIcon>
+        )}
       </Card>
     </Link>
   );

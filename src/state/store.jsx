@@ -9,7 +9,9 @@ const initialState = {
   loggedUser: myStorage.getItem('loggedUser')
     ? JSON.parse(myStorage.getItem('loggedUser'))
     : null,
-  favorites: [],
+  favorites: localStorage.getItem('favorites')
+    ? JSON.parse(localStorage.getItem('favorites'))
+    : [],
 };
 const store = createContext(initialState);
 const { Provider } = store;
@@ -46,19 +48,19 @@ const StateProvider = ({ children }) => {
         };
       case 'login':
         return {
-          videoList: currentState.videoList,
+          videoList: [],
           darkMode: currentState.darkMode,
-          currentVideo: currentState.currentVideo,
-          currentVideoProfile: currentState.currentVideoProfile,
+          currentVideo: {},
+          currentVideoProfile: {},
           loggedUser: action.payload,
           favorites: currentState.favorites,
         };
       case 'logout':
         return {
-          videoList: currentState.videoList,
+          videoList: [],
           darkMode: currentState.darkMode,
-          currentVideo: currentState.currentVideo,
-          currentVideoProfile: currentState.currentVideoProfile,
+          currentVideo: {},
+          currentVideoProfile: {},
           loggedUser: null,
           favorites: currentState.favorites,
         };
@@ -69,7 +71,7 @@ const StateProvider = ({ children }) => {
           currentVideo: currentState.currentVideo,
           currentVideoProfile: currentState.currentVideoProfile,
           loggedUser: currentState.loggedUser,
-          favorites: currentState.favorites.append(action.payload),
+          favorites: action.payload,
         };
       case 'removeFavorite':
         return {
@@ -78,9 +80,7 @@ const StateProvider = ({ children }) => {
           currentVideo: currentState.currentVideo,
           currentVideoProfile: currentState.currentVideoProfile,
           loggedUser: currentState.loggedUser,
-          favorites: currentState.favorites.filter(
-            (video) => video.id.videoId !== action.payload.id.videoId
-          ),
+          favorites: action.payload,
         };
       default:
         throw new Error();

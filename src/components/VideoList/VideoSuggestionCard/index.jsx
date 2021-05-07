@@ -5,9 +5,11 @@ import { Card, Title, VideoPreview, StyledLink } from './style';
 
 const VideoSuggestionCard = (props) => {
   const globalState = useContext(store);
-  const videoObject = {
-    pathname: `/video/${props.video.id.videoId}`,
-  };
+  const videoObject = props.favorites
+    ? { pathname: `/favorites/${props.video.id.videoId}` }
+    : {
+        pathname: `/video/${props.video.id.videoId}`,
+      };
 
   return (
     <StyledLink to={videoObject}>

@@ -21,6 +21,7 @@ const VideoPlayer = (props) => {
         q: videoID,
       };
       const response = await youtubeSearch(queryParams);
+      dispatch({ type: 'search', payload: response.data });
 
       if (response !== undefined) {
         queryParams = {

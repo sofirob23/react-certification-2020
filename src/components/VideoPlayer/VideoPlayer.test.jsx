@@ -20,6 +20,12 @@ describe('Video Player Tests', () => {
   };
 
   test('Video Player is displayed', () => {
+    const videoListData = videoListMock.items;
+    axios.get.mockImplementationOnce(() => Promise.resolve(videoListData));
+
+    axios.get.mockImplementationOnce(() => Promise.resolve(profileMock));
+
+    axios.get.mockImplementationOnce(() => Promise.resolve(videoMock));
     render(
       <Provider value={{ dispatch, state }}>
         <VideoPlayer match={{ params: { videoID: videoMock.id.videoId } }} />

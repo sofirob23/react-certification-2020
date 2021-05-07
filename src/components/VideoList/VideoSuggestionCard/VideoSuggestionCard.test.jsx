@@ -40,4 +40,18 @@ describe('Video Card Suggestion Tests', () => {
     const newPath = `/video/${videoMock.id.videoId}`;
     expect(history.location.pathname).toBe(newPath);
   });
+
+  test('Video Card favorite redirects to favorites on Click', () => {
+    const history = createMemoryHistory();
+    render(
+      <Provider value={{ dispatch, state }}>
+        <Router history={history}>
+          <VideoSuggestionCard video={videoMock} favorites />
+        </Router>
+      </Provider>
+    );
+    fireEvent.click(screen.getByRole('img'));
+    const newPath = `/favorites/${videoMock.id.videoId}`;
+    expect(history.location.pathname).toBe(newPath);
+  });
 });

@@ -38,7 +38,6 @@ const Profile = () => {
         return;
       }
       profile = profileResult;
-      console.log(profile);
       myStorage.setItem('loggedUser', JSON.stringify(profile));
       dispatch({ type: 'login', payload: profile });
     });
@@ -68,13 +67,14 @@ const Profile = () => {
     <>
       <ProfileCollapse>
         {globalState.state.loggedUser === null ? (
-          <AccountCircle onClick={Login} fontSize="large" />
+          <AccountCircle data-testid="profile-icon" onClick={Login} fontSize="large" />
         ) : (
           <>
             <Button
               aria-controls="simple-menu"
               aria-haspopup="true"
               onClick={handleClick}
+              data-testid="profile-button"
             >
               <ProfileIcon
                 alt="profile"

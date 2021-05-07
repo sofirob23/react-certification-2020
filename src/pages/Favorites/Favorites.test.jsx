@@ -2,61 +2,52 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
 import { StaticRouter } from 'react-router';
-import axios from 'axios';
 import videos from '../../utils/mocks/youtube-videos-mock.json';
+import mockUser from '../../utils/mocks/logged-user-mock.json';
 import { store } from '../../state/store';
-import Home from './index';
+import Favorites from './index';
 
-jest.mock('axios');
-
-describe('Home Tests', () => {
+describe('Favorites Tests', () => {
   const { Provider } = store;
   const dispatch = jest.fn();
   let state = {
-    videoList: videos,
+    videoList: [],
     darkMode: false,
     currentVideo: {},
     currentVideoProfile: {},
+    favorites: videos.items,
+    loggedUser: mockUser,
   };
 
-  test('Contains Logo', () => {
+  test('Renders favorites list', () => {
     render(
       <StaticRouter>
         <Provider value={{ dispatch, state }}>
-          <Home />
+          <Favorites />
         </Provider>
       </StaticRouter>
     );
-    expect(screen.getAllByAltText('logo').length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('img').length).toBeGreaterThan(1);
+    expect(screen.getByText(videos.items[1].snippet.title)).toBeInTheDocument();
+    expect(screen.getByText(videos.items[1].snippet.description)).toBeInTheDocument();
   });
 
-  test('Renders 25 results on not empty list', () => {
-    render(
-      <StaticRouter>
-        <Provider value={{ dispatch, state }}>
-          <Home />
-        </Provider>
-      </StaticRouter>
-    );
-    expect(screen.getAllByRole('img').length).toBeGreaterThan(25);
-  });
-
-  test('fetches successfully data from an API', async () => {
+  test('Renders No favorites found when favorites is empty', () => {
     state = {
       videoList: [],
       darkMode: false,
       currentVideo: {},
       currentVideoProfile: {},
+      favorites: [],
+      loggedUser: mockUser,
     };
-    const data = videos.items;
-    const apiServiceMock = axios.get.mockImplementationOnce(() => Promise.resolve(data));
     render(
       <StaticRouter>
         <Provider value={{ dispatch, state }}>
-          <Home />
+          <Favorites />
         </Provider>
       </StaticRouter>
     );
-    expect(apiServiceMock).toHaveBeenCalled();
+    expect(screen.getByText('No Favorites found!')).toBeInTheDocument();
   });
 });

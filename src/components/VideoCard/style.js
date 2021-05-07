@@ -57,3 +57,9 @@ export const VideoPreview = styled.img`
   height: 90px;
   width: 200px;
 `;
+
+export const FavoritesIcon = styled.div`
+  .MuiSvgIcon-root {
+    padding-left: 150px;
+  }
+`;

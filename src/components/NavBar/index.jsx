@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
-import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
 import { store } from '../../state/store';
 import SearchBar from './SearchBar';
 import Toggle from './Toggle';
 import Profile from './Profile';
+import NavBarMenu from './NavBarMenu';
 
 import { FullDisplay, StyledNavBar } from './style';
 
@@ -19,9 +18,7 @@ const NavBar = () => {
         position="sticky"
       >
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
+          <NavBarMenu />
           <SearchBar />
           <FullDisplay className="FullDisplay">
             <Toggle />
